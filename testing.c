@@ -85,16 +85,27 @@ int main() {
     // printf("%p\n", p);
     // printf("%d", *p);
 
-    int a[] = {5, 6, 7};
-    int *ptr = a;
-    char a[] = "abcdeshuer";
-    char *ptr = strrev(a);
+    // int a[] = {5, 6, 7};
+    // int *ptr = a;
+    // char a[] = "abcdeshuer";
+    // char *ptr = strrev(a);
 
     // func(a, sizeof(a));
 
-    *(a + 1) = 'k';
+    // *(a + 1) = 'k';
 
-    printf("%c\n", *(a + 1));
+    // printf("%c\n", *(a + 1));
+
+    int n = 5;
+
+    for (int i = -1; i < n; i++) {
+        int x = i;
+        printf("%d\n", x);
+        x = ++x % n;
+        printf("%d\n\n", x);
+        // printf("%d\n", x);
+        // printf("\n");
+    }
 
     return 0;
 }
